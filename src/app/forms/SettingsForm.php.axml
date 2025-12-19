@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="SettingsForm">
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+  
+  
+  <method name="doLabelGlobalKeyDownH">
+      <ifText method="equals" method-type="" not="" not-type="" object="label" object-type="object" string="Настройки" string-type="string"/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Hactpoyku" value-type="string"/>
+      <else/>
+      <elementSetText object="label" object-type="object" relative="" relative-type="" value="Настройки" value-type="string"/>
+    </method>
+  
+  
+  
+  <method name="doButtonAltClickLeft">
+      <elementLoadContent object="label7" object-type="object" path="http://unified.uzbekistation.serv00.net/juix/ver" path-type="string" sync="" sync-type=""/>
+      <ifText method="equals" method-type="" not="1" not-type="" object="label7" object-type="object" string="alpha" string-type="string"/>
+      <elementSetText object="label8" object-type="object" relative="" relative-type="" value="Доступно обновление!" value-type="string"/>
+      <else/>
+      <elementSetText object="label8" object-type="object" relative="" relative-type="" value="У Вас установлена новейшая версия ПО." value-type="string"/>
+    </method>
+    <method name="doLinkClickLeft">
+      <elementHide object="panel" object-type="object"/>
+    </method>
+    <method name="doButton3ClickLeft">
+      <elementHide object="panel7" object-type="object"/>
+    </method>
+    <method name="doButtonClickLeft">
+      <loadForm form="HomeForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  </class>
+</root>

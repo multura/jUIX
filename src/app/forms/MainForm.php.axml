@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="MainForm">
+    
+  
+  
+  
+  
+  <method name="doButtonAltClickLeft">
+      <hideForm form="~sender" form-type="form"/>
+    </method>
+  <method name="doButtonClickLeft">
+      <loadForm form="LockForm" form-type="form" savePosition="" savePosition-type="" saveSize="" saveSize-type=""/>
+    </method>
+  </class>
+</root>

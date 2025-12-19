@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="HomeForm">
+    
+  
+  <method name="doPanel4ClickLeft">
+      <loadForm form="MarketplaceForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  <method name="doPanel3ClickLeft">
+      <loadForm form="NoteForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  <method name="doPanelAltClickLeft">
+      <loadForm form="SettingsForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+      <elementShow object="form('SettingsForm')-&gt;banner" object-type="object"/>
+    </method>
+  
+  
+    
+    
+    
+  <method name="doPanel5ClickLeft">
+      <loadForm form="BrowserForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doPanel6ClickLeft">
+      <loadForm form="SomeForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <method name="doShowing">
+      <elementLoadContent object="label8" object-type="object" path="http://unified.uzbekistation.serv00.net/juix/marketplace/info/app" path-type="string" sync="" sync-type=""/>
+      <elementLoadContent object="label10" object-type="object" path="http://unified.uzbekistation.serv00.net/juix/marketplace/info/repo" path-type="string" sync="" sync-type=""/>
+      <ifText method="contains" method-type="" not="" not-type="" object="label8" object-type="object" string="&lt;!DOCTYPE" string-type="string"/>
+      <elementSetValue object="label8" object-type="object" relative="" relative-type="" value="Ошибка!" value-type="string"/>
+      <ifText method="contains" method-type="" not="" not-type="" object="label10" object-type="object" string="&lt;!DOCTYPE" string-type="string"/>
+      <elementSetText object="label10" object-type="object" relative="" relative-type="" value="Ошибка!" value-type="string"/>
+      <ifText method="equals" method-type="" not="1" not-type="" object="label10" object-type="object" string="Загрузка..." string-type="string"/>
+      <fadeOut continue="" continue-type="" duration="300" duration-type="integer" object="panel7" object-type="object"/>
+    </method>
+  <method name="doButtonClickLeft">
+      <loadForm form="LockForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  </class>
+</root>

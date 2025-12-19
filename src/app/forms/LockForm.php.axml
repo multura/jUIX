@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="LockForm">
+    <method name="doButtonClickLeft">
+      <loadForm form="HomeForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+    <method name="doLabel3ClickLeft">
+      <elementShow object="label4" object-type="object"/>
+      <elementHide object="label3" object-type="object"/>
+    </method>
+    <method name="doLabel4ClickLeft">
+      <elementShow object="label3" object-type="object"/>
+      <elementHide object="label4" object-type="object"/>
+    </method>
+  </class>
+</root>

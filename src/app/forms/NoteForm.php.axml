@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+  <class name="NoteForm">
+    
+  
+  
+  <method name="doButton3ClickLeft">
+      <elementSetText object="textArea" object-type="object" relative="" relative-type="" value="" value-type="string"/>
+    </method>
+  <method name="doButtonClickLeft">
+      <loadForm form="HomeForm" form-type="form" savePosition="1" savePosition-type="" saveSize="1" saveSize-type=""/>
+    </method>
+  </class>
+</root>
